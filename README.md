@@ -49,9 +49,9 @@ python3 run.py llama2-7b /home/models/llama2-7b c4 row-hbraq --blocksize 128 --s
 
 
 ## Citation
-If you find HBiLLM is helpful to your work, please kindly cite this paper:
+If you find HBLLM is helpful to your work, please kindly cite this paper:
 ```
-@article{chen2025hbillm,
+@article{chen2025hbllm,
   title={HBLLM: A Haar-Based Approach for Accurate Structured 1-Bit Quantized LLMs},
   author={Ningning Chen, Weicai Ye, Ying Jiang},
   journal={arXiv preprint arXiv:2512.00862},

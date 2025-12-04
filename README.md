@@ -1,3 +1,4 @@
+HBLLM: A Haar-Based Approach for Accurate Structured 1-Bit Quantized LLMs
 ## Abstract
 
 We introduce HBLLM, a wavelet-enhanced high-fidelity $1$-bit post-training quantization method for Large Language Models (LLMs). By leveraging Haar wavelet transforms to enhance expressive capacity through frequency decomposition, HBLLM significantly improves quantization fidelity while maintaining minimal overhead. This approach features two innovative structure-aware grouping strategies: (1) frequency-aware multi-parameter intra-row grouping and (2) $\ell_2$-norm-based saliency-driven column selection. For non-salient weights, a shared mean is employed across quantization groups within each frequency band to optimize storage efficiency. Experiments conducted on the OPT and LLaMA models demonstrate that HBLLM achieves state-of-the-art performance in $1$-bit quantization, attaining a perplexity of $6.71$ perplexity on LLaMA$2$-$13$B with an average weight storage of only $1.08$ bits.
@@ -46,3 +47,14 @@ python3 run.py llama2-7b /home/models/llama2-7b c4 row-hbraq --blocksize 128 --s
 
 [BiLLM: Pushing the Limit of Post-Training Quantization for LLMs](https://github.com/Aaronhuang-778/BiLLM)
 
+
+## Citation
+If you find HBiLLM is helpful to your work, please kindly cite this paper:
+```
+@article{chen2025hbillm,
+  title={HBLLM: A Haar-Based Approach for Accurate Structured 1-Bit Quantized LLMs},
+  author={Ningning Chen, Weicai Ye, Ying Jiang},
+  journal={arXiv preprint arXiv:2512.00862},
+  year={2025}
+}
+```
